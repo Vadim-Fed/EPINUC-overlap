@@ -12,7 +12,7 @@ EPINuc generates multi-layered information encompassing various cellular pathway
 # EPINuc-overlap
 
 This is the script used to assess overlap significance between plasma sequenced reads positive for 5hmC/antibody of interest with a given tissue chip-seq Peaks. 
-The script performs bootstrapping simulation to analyze the significance of the single-molecule reads overlap with various tissues.
+The script performs bootstrapping simulations to analyze the significance of the single-molecule reads overlap with various tissue peaks.
 
 Analysis was ran on R vs 4.0
 
