@@ -17,6 +17,6 @@ The script performs bootstrapping simulations to analyze the significance of the
 Analysis was ran on R vs 4.0
 
 The files needed to run the analysis are:
-1. Chromosome_length.csv - supplied here in the main branch,
+1. Chromosome_length.csv - supplied here at the main branch.
 2. BED file of plasma sequenced reads, positive for 5hmC/antibody of interest - available upon request.
 3. BED files for the tested tissues - Available at https://www.encodeproject.org/ with accession numbers for relevant chip-seq datasets listed at Table S4.
