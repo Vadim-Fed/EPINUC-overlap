@@ -2,9 +2,9 @@
 library(dplyr)
 library(readr)
 
-Chromosome_length <- as.data.frame(read_csv("Insert path to chromosome lenght file.csv",col_names = F)) #Load this file as well
+Chromosome_length <- as.data.frame(read_csv("Insert path to chromosome lenght file.csv",col_names = F))
 names(Chromosome_length)<-c("chr","chr_length")
-a<-list(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,"X","Y")
+a<-c(as.list(1:22),as.list(c("X","Y")))
 
 ####.....Organizing Datasets....####
 
@@ -400,7 +400,7 @@ double_intersect<-unlist(lapply(Plasma_Chip_overlap_Unique, nrow))
 Plasma_Intersect_values_Corrected<-Plasma_Intersect_values-double_intersect
 
 #######..... Assessing overlap significance....######
-iter=10000 #number of iterations ##############Change to 10K
+iter=10000 #number of iterations 
 h<-list()
 By_chance<-function(k){
 Bootstrap<-function(y){
